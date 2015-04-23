@@ -8,12 +8,67 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <style>
+      .modalDialog {
+      	position: fixed;
+      	font-family: Arial, Helvetica, sans-serif;
+      	top: 0;
+      	right: 0;
+      	bottom: 0;
+      	left: 0;
+      	background: rgba(0,0,0,0.8);
+      	z-index: 99999;
+      	opacity:0;
+      	-webkit-transition: opacity 400ms ease-in;
+      	-moz-transition: opacity 400ms ease-in;
+      	transition: opacity 400ms ease-in;
+      	pointer-events: none;
+      }
+      
+      .modalDialog:target {
+      	opacity:1;
+      	pointer-events: auto;
+      }
+
+      .modalDialog > div {
+      	width: 400px;
+      	position: relative;
+      	margin: 10% auto;
+      	padding: 5px 20px 13px 20px;
+      	border-radius: 10px;
+      	background: #fff;
+      	background: -moz-linear-gradient(#fff, #999);
+      	background: -webkit-linear-gradient(#fff, #999);
+      	background: -o-linear-gradient(#fff, #999);
+      }
+      
+      .close {
+      	background: #606061;
+      	color: #FFFFFF;
+      	line-height: 25px;
+      	position: absolute;
+      	right: -12px;
+      	text-align: center;
+      	top: -10px;
+      	width: 24px;
+      	text-decoration: none;
+      	font-weight: bold;
+      	-webkit-border-radius: 12px;
+      	-moz-border-radius: 12px;
+      	border-radius: 12px;
+      	-moz-box-shadow: 1px 1px 3px #000;
+      	-webkit-box-shadow: 1px 1px 3px #000;
+      	box-shadow: 1px 1px 3px #000;
+      }
+
+.close:hover { background: #00d9ff; }
+    </style>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Avery Bowman, LLC</h1>
       <h2 class="project-tagline">Essential trainings and certifications</h2>
-      <a href="https://github.com/AveryBowmanLLC/website" class="btn">Contact</a>
+      <a href="#openModal" class="btn">Contact</a>
     </section>
 
     <section class="main-content">
@@ -27,6 +82,10 @@
 
 <p>Cat ipsum dolor sit amet, find something else more interesting. Play riveting piece on synthesizer keyboard. Chase imaginary bugs present belly, scratch hand when stroked under the bed stare at ceiling. Hunt anything that moves chew iPad power cord sweet beast hiss at vacuum cleaner. Scamper ears back wide eyed for pooping rainbow while flying in a toasted bread costume in space and stare at the wall, play with food and get confused by dust destroy couch, or pooping rainbow while flying in a toasted bread costume in space yet always hungry. Sun bathe caticus cuteicus. Jump launch to pounce upon little yarn mouse, bare fangs at toy run hide litter box until treats are fed inspect anything brought into the house, sun bathe, and cat slap dog in face or meow all night having their mate disturbing sleeping humans. Leave fur on owners clothes meow all night having their mate disturbing sleeping humans scratch the furniture, chew on cable. Love to play with owner's hair tie present belly, scratch hand when stroked so scamper jump launch to pounce upon little yarn mouse, bare fangs at toy run hide litter box until treats are fed have secret plans. </p>
 
+<div id="openModal" class="modalDialog">
+   <iframe src="https://docs.google.com/forms/d/1S4wOUm7vYswyR4_dqM_nFjkWsn-3GsE7z4vTo1mtHC8/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>  
+  
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/AveryBowmanLLC/website">Avery Bowman, LLC</a> is maintained by <a href="https://github.com/AveryBowmanLLC">AveryBowmanLLC</a>.</span>
       </footer>
