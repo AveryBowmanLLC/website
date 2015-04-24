@@ -31,10 +31,11 @@
       }
 
       .modalDialog > div {
-      	width: 400px;
+        height: 80%;
       	position: relative;
+        top: 15px;
       	margin: 10% auto;
-      	padding: 5px 20px 13px 20px;
+      	padding: 0;
       	border-radius: 10px;
       	background: #fff;
       	background: -moz-linear-gradient(#fff, #999);
@@ -47,9 +48,9 @@
       	color: #FFFFFF;
       	line-height: 25px;
       	position: absolute;
-      	right: -12px;
+      	right: 12px;
       	text-align: center;
-      	top: -10px;
+      	top: 12px;
       	width: 24px;
       	text-decoration: none;
       	font-weight: bold;
@@ -61,7 +62,11 @@
       	box-shadow: 1px 1px 3px #000;
       }
 
-.close:hover { background: #00d9ff; }
+      .close:hover { background: #00d9ff; }
+
+      iframe {
+           overflow: hidden;
+      }
     </style>
   </head>
   <body>
@@ -85,7 +90,7 @@
 <div id="openModal" class="modalDialog">
   <div>
     <a href="#close" title="Close" class="close">X</a>
-    <iframe src="https://docs.google.com/forms/d/1S4wOUm7vYswyR4_dqM_nFjkWsn-3GsE7z4vTo1mtHC8/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <iframe src="contact.html" frameborder="0" marginheight="0" marginwidth="0" height="100%" width="100%">Loading...</iframe>
   </div>
 </div>  
   
